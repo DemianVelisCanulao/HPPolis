@@ -13,7 +13,7 @@ const EntradaInvitacion = ({ fullName }: { fullName: string }) => {
 
 async function getData() {
     try {
-        const res = await fetch(`${process.env.BASE_URL}/api/getPosts`)
+        const res = await fetch(`http://localhost:3000/api/getPosts`)
  
         if (!res.ok) {
           

@@ -1,7 +1,7 @@
 
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "https://fcpola.web.app"
+    ? "http://localhost:3000"
     : "http://localhost:3000";
 
 async function getData() {
