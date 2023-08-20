@@ -31,7 +31,7 @@ async function getData() {
 }
 
 export async function getServerSideProps(context:any) {
-    console.log("BASE_URL",process.env.BASE_URL)
+    
     const data : {name : string} [] = await getData()
     const nameGuests = data.map((guest) => guest.name)
     
