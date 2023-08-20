@@ -1,19 +1,4 @@
-
-const baseUrl =
-  process.env.NODE_ENV === "production"
-    ? "https://hp-polis.vercel.app"
-    : "http://localhost:3000";
-
-async function getData() {
-    const res = await fetch(`${baseUrl}/api/getPosts`)
-
-    if (!res.ok) {
-      // This will activate the closest `error.js` Error Boundary
-      console.log('Failed to fetch data')
-    }
-    
-    return res.json()
-}
+import { getData } from "@/lib/getData"
 
 export default async function Page(){
     
