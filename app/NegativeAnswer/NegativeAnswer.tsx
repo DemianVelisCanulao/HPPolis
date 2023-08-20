@@ -15,7 +15,7 @@ export default function NegativeAnswer(){
                 <p className="p-big">Está bien; lo entiendo.</p>
                 <p className="p-big">Pero igual no te olvides de mi regalo.</p> 
                 <Image
-                src="/../public/sad-answer.gif"
+                src="/sad-answer.gif"
                 width={300}
                 height={300}
                 alt="Amapola troste"

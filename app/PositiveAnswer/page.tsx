@@ -10,7 +10,7 @@ export default function Page(){
         <div className="answer-container">
             <h1 className='home-text'>¡Muchas gracias por responder!.</h1>
             <Image
-                src="/../public/Pola-ok.jpg"
+                src="/Pola-ok.jpg"
                 width={300}
                 height={300}
                 alt="Amapola Okis"

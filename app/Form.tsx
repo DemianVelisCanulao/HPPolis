@@ -58,7 +58,7 @@ export default function FormGuest({guestName} : any){
                                 <h2 className="invitation-message"> Te invito a mi Pumpleaños</h2>
                                 <p className="invitation-message"> El día 26/08 a las 21:00 hrs</p>
                                 <Image
-                                src={'/../public/clown-2.png'}
+                                src={'/clown-2.png'}
                                 alt="Clown 1"
                                 width={125}
                                 height={125}

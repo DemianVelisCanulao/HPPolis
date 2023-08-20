@@ -53,6 +53,7 @@ export async function getServerSideProps(context:any) {
         "Apo",
         "Amarantis",
         "Rayito",
+        "Amapola"
     ];
     const nameGuestsSet = new Set(nameGuests);
     if (nameGuestsSet.has(fullName)) {

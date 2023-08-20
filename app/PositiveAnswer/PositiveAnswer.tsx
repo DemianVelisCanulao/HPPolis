@@ -21,7 +21,7 @@ export default function PositiveAnswer(){
         
         <div className="answer-container">
              <Image
-            src="/../public/car_clowns.png"
+            src="/car_clowns.png"
             width={100}
             height={100}
             alt="Amapola feliz"
@@ -34,7 +34,7 @@ export default function PositiveAnswer(){
             
             
             <Image
-            src="/../public/happy-answer.gif"
+            src="/happy-answer.gif"
             width={300}
             height={300}
             alt="Amapola feliz"
