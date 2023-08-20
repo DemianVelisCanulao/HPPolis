@@ -6,7 +6,14 @@ const baseUrl =
     ? "https://hp-polis.vercel.app"
     : "http://localhost:3000";
 
-export async function getData() {
+interface Guest {
+    // Define la estructura de un objeto Post
+    id: number;
+    name: string;
+    is_coming: boolean;
+    // ... otras propiedades
+}
+export async function getData(): Promise<Guest[]> {
     
     const res = await fetch(`${baseUrl}/api/getPosts`)
 

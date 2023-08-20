@@ -1,9 +1,21 @@
 import { getData } from "@/lib/getData"
+import { GetStaticProps } from 'next';
+interface Guest {
+    // Define la estructura de un objeto Post
+    id: number;
+    name: string;
+    is_coming: boolean;
+    // ... otras propiedades
+} 
 
-export default async function Page(){
+export const getStaticProps: GetStaticProps = async () =>  {
+    //const posts = await getData();
+    const data: Guest[] = await getData();
+    return { props: { data } };
+}
+  
+export default function Page({ data }: { data: Guest[] }){
     
-    const data: {id:number, name:string, is_coming:boolean}[]= await getData()
-
     var i = 0
     return (
         <div>
@@ -29,3 +41,4 @@ export default async function Page(){
         </div>
     )
 }
+
