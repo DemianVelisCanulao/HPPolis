@@ -5,7 +5,7 @@ const baseUrl =
     : "http://localhost:3000";
 
 async function getData() {
-    const res = await fetch(`${process.env.BASE_URL}/api/getPosts`)
+    const res = await fetch(`http://localhost:3000/api/getPosts`)
 
     if (!res.ok) {
       // This will activate the closest `error.js` Error Boundary
