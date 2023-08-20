@@ -13,7 +13,7 @@ const EntradaInvitacion = ({ fullName }: { fullName: string }) => {
 
 async function getData() {
     try {
-        const res = await fetch(`/api/getPosts`)
+        const res = await fetch(`https://hp-polis.vercel.app/api/getPosts`)
  
         if (!res.ok) {
           

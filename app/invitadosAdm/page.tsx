@@ -5,7 +5,7 @@ const baseUrl =
     : "http://localhost:3000";
 
 async function getData() {
-    const res = await fetch(`/api/getPosts`)
+    const res = await fetch(`https://hp-polis.vercel.app/api/getPosts`)
 
     if (!res.ok) {
       // This will activate the closest `error.js` Error Boundary
