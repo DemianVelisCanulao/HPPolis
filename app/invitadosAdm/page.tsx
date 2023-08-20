@@ -4,7 +4,7 @@ const baseUrl =
     ? "https://hp-polis.vercel.app"
     : "http://localhost:3000";
 
-/*async function getData() {
+async function getData() {
     const res = await fetch(`${baseUrl}/api/getPosts`)
 
     if (!res.ok) {
@@ -13,16 +13,16 @@ const baseUrl =
     }
     
     return res.json()
-}*/
+}
 
-export default function Page(){
+/*export default function Page(){
     return (
         <p>
             Holaa
         </p>
     )
-}
-/*export default async function Page(){
+}*/
+export default async function Page(){
     
     const data: {id:number, name:string, is_coming:boolean}[]= await getData()
 
@@ -50,4 +50,4 @@ export default function Page(){
            
         </div>
     )
-}*/
+}
