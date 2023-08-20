@@ -1,11 +1,11 @@
 
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "http://localhost:3000"
+    ? "https://hp-polis.vercel.app"
     : "http://localhost:3000";
 
 async function getData() {
-    const res = await fetch(`https://hp-polis.vercel.app/api/getPosts`)
+    const res = await fetch(`${baseUrl}/api/getPosts`)
 
     if (!res.ok) {
       // This will activate the closest `error.js` Error Boundary

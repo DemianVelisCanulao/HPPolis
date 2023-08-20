@@ -1,6 +1,10 @@
 import { useRouter } from "next/router";
 //import { notFound  } from "next/navigation";
 import FormGuest from "@/app/Form";
+const baseUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://hp-polis.vercel.app"
+    : "http://localhost:3000";
 
 const EntradaInvitacion = ({ fullName }: { fullName: string }) => {
     
@@ -13,7 +17,7 @@ const EntradaInvitacion = ({ fullName }: { fullName: string }) => {
 
 async function getData() {
     try {
-        const res = await fetch(`https://hp-polis.vercel.app/api/getPosts`)
+        const res = await fetch(`${baseUrl}/api/getPosts`)
  
         if (!res.ok) {
           
