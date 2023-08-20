@@ -1,0 +1,33 @@
+{
+  "pages": {
+    "/layout": [
+      "static/chunks/webpack-5b4963569d526c2e.js",
+      "static/chunks/bce60fc1-8c4748991edb1ec4.js",
+      "static/chunks/698-1321e6d13d35448d.js",
+      "static/chunks/main-app-150a70ceb36926b0.js",
+      "static/css/719c5664fc386f03.css",
+      "static/chunks/app/layout-5e7c21622df09a1a.js"
+    ],
+    "/page": [
+      "static/chunks/webpack-5b4963569d526c2e.js",
+      "static/chunks/bce60fc1-8c4748991edb1ec4.js",
+      "static/chunks/698-1321e6d13d35448d.js",
+      "static/chunks/main-app-150a70ceb36926b0.js",
+      "static/chunks/app/page-6853e0996e57933a.js"
+    ],
+    "/invitadosAdm/page": [
+      "static/chunks/webpack-5b4963569d526c2e.js",
+      "static/chunks/bce60fc1-8c4748991edb1ec4.js",
+      "static/chunks/698-1321e6d13d35448d.js",
+      "static/chunks/main-app-150a70ceb36926b0.js",
+      "static/chunks/app/invitadosAdm/page-241d6e7583a0a992.js"
+    ],
+    "/PositiveAnswer/page": [
+      "static/chunks/webpack-5b4963569d526c2e.js",
+      "static/chunks/bce60fc1-8c4748991edb1ec4.js",
+      "static/chunks/698-1321e6d13d35448d.js",
+      "static/chunks/main-app-150a70ceb36926b0.js",
+      "static/chunks/app/PositiveAnswer/page-8e8c75138cdc22b8.js"
+    ]
+  }
+}
