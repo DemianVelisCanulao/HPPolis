@@ -6,8 +6,8 @@ const baseUrl =
     ? "https://hp-polis.vercel.app"
     : "http://localhost:3000";
 
-const EntradaInvitacion = ({ fullName }: { fullName: string }) => {
-    
+const EntradaInvitacion = () => {
+    const fullName = ""
     return (
         <>
             <FormGuest guestName = {fullName}/>
