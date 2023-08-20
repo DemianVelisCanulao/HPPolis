@@ -1,21 +1,24 @@
-import { getData } from "@/lib/getData"
-import { GetStaticProps } from 'next';
-interface Guest {
-    // Define la estructura de un objeto Post
-    id: number;
-    name: string;
-    is_coming: boolean;
-    // ... otras propiedades
-} 
 
-export const getStaticProps: GetStaticProps = async () =>  {
-    //const posts = await getData();
-    const data: Guest[] = await getData();
-    return { props: { data } };
-}
-  
-export default function Page({ data }: { data: Guest[] }){
+const baseUrl =
+  process.env.NODE_ENV === "production"
+    ? "https://hp-polis.vercel.app"
+    : "http://localhost:3000";
+
+async function getData() {
+    const res = await fetch(`${baseUrl}/api/getPosts`)
+
+    if (!res.ok) {
+      // This will activate the closest `error.js` Error Boundary
+      throw new Error('Failed to fetch data')
+    }
     
+    return res.json()
+}
+
+export default async function Page(){
+    
+    const data: {id:number, name:string, is_coming:boolean}[]= await getData()
+
     var i = 0
     return (
         <div>
@@ -41,4 +44,3 @@ export default function Page({ data }: { data: Guest[] }){
         </div>
     )
 }
-
