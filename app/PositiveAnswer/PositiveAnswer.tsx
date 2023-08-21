@@ -47,7 +47,7 @@ export default function PositiveAnswer(){
                 <p className="answer-paragraph">No olvides mi regalo :P</p>
             </div>
             <Image
-            src="/../public/cake_clown.png"
+            src="/cake_clown.png"
             width={100}
             height={100}
             alt="Amapola feliz"
