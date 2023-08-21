@@ -33,14 +33,15 @@ async function getData() {
 export async function getServerSideProps(context:any) {
     
     const data : {name : string} [] = await getData()
-    const nameGuests = data.map((guest) => guest.name)
+    const confirmedsGuests = data.map((guest) => guest.name)
     
     const { query } = context;
     const guest2 = query.invitacion ?? "";
     const split_name = typeof guest2 === "string" ? guest2.split("-") : [];
 
     const fullName = `${split_name[0]} ${split_name[1] ?? ""} ${split_name[2] ?? ""}`;
-    
+
+    //Lista de invitados
     const GuestsList = [
         "Cami",
         "Benja",
@@ -53,10 +54,21 @@ export async function getServerSideProps(context:any) {
         "Apo",
         "Amarantis",
         "Rayito",
-        "Amapola"
+        "Amapola",
+        "Demian",
+        "Guelita Nati",
+        "Tata Ricardo",
+        "Tio Pablo",
+        "Marcela",
+        "Ali",
+        "Magda",
+        "Papaya",
+        "MamaCanelo"
     ];
-    const nameGuestsSet = new Set(nameGuests);
-    if (nameGuestsSet.has(fullName)) {
+    
+    //Si es que ya ha confirmado, se retorna a la pantalla de confirmación
+    const isConfirmed = confirmedsGuests.some(confirmed => confirmed.toLowerCase().trim() == fullName.toLowerCase().trim());
+    if (isConfirmed) {
         return {
             redirect: {
                 destination: "/PositiveAnswer",
@@ -65,7 +77,8 @@ export async function getServerSideProps(context:any) {
         };
     }
     
-    const isGuest = GuestsList.includes(guest2);
+    //Si es que es un invitado no se retorna al home
+    const isGuest = GuestsList.some(guest => guest.toLowerCase().trim() == fullName.toLowerCase().trim());
     
     if (!isGuest) {
         return {

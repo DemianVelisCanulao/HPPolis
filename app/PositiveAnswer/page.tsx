@@ -8,7 +8,7 @@ export default function Page(){
     }
     return(
         <div className="answer-container">
-            <h1 className='home-text'>¡Muchas gracias por responder!.</h1>
+            <h1 className='home-text'>¡Muchas gracias por confirmar!.</h1>
             <Image
                 src="/Pola-ok.jpg"
                 width={300}

@@ -20,7 +20,7 @@ export default function Arrow({guestName} : {guestName : string}){
     
     return(
         <>
-        <p id="pincha-aqui"> Hola {guestName} pincha aquí</p>
+        <p id="pincha-aqui"> Hola {guestName}, por favor abre el regalo</p>
         <div className="icon">
             
             <div className="arrow"></div>
