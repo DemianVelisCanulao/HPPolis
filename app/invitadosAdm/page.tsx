@@ -1,6 +1,6 @@
 "use client"
 import { useEffect, useState } from 'react';
-
+import Head from 'next/head';
 
 const baseUrl =process.env.NODE_ENV === "production" ? "https://hp-polis.vercel.app" : "http://localhost:3000";
 

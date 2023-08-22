@@ -65,7 +65,9 @@ export async function getServerSideProps(context:any) {
         "Papaya",
         "MamaCanelo",
         "Colomercio",
-        "Joshe"
+        "Joshe",
+        "Mati",
+        "Miguel Angel"
     ];
     
     //Si es que ya ha confirmado, se retorna a la pantalla de confirmación

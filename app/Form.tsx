@@ -20,8 +20,8 @@ export default function FormGuest({guestName} : any){
         "Ali",
         "Magda",
         "Papaya",
-        "MamaCanelo"
-        
+        "MamaCanelo",
+        "Miguel Angel"
     ];
     const router = useRouter();
     async function submitGuest(e: React.FormEvent){
